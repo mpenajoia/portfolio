@@ -1,0 +1,70 @@
+{
+    "about": {
+        "description": "lorem ipsom",
+        "skills": [
+            {
+                "title": "Education",
+                "details": [
+                    {
+                        "name": "General Assembly",
+                        "subname": "Software Engineering",
+                        "year": "2021",
+                        "desc": "Certificate of Completion",
+                        "location": "Los Angeles, CA, USA",
+                        "link": ""
+                    },
+                    {
+                        "name": "New Jersey Institute of Technology",
+                        "subname": "",
+                        "year": "2007-2011",
+                        "desc": "B.S. in Business",
+                        "location": "Newark, NJ, USA",
+                        "link": ""
+                    }
+                ]
+            },
+            {
+                "title": "Experience",
+                "details": [
+                    {
+                        "name": "General Assembly",
+                        "subname": "Software Engineering Fellow",
+                        "year": "2021",
+                        "desc": "",
+                        "location": "Remote",
+                        "link": "https://penajoia.com/resume"
+                    },
+                    {
+                        "name": "Moto Republic",
+                        "subname": "Technician",
+                        "year": "2019-2021",
+                        "desc": "",
+                        "location": "Eagle Rock, CA, USA",
+                        "link": ""
+                    }
+                ]
+            },
+            {
+                "title": "Skills",
+                "details": [
+                    {
+                        "name": "React",
+                        "subname": "",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "Javascript",
+                        "subname": "",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
