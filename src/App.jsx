@@ -5,7 +5,6 @@ import Info from './info/info.json'
 
 function App() {
   const [info, setInfo] = useState(Info)
-  console.log(info)
   return (
     <ObjectContext.Provider value={{ info }}>
     <div className="flex w-full justify-center flex-col">
