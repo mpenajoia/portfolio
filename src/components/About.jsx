@@ -1,15 +1,20 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { ObjectContext  } from '../context/ObjectContext';
 import AboutDetail from './AboutDetail';
 
 function About() {
     const { info } = useContext(ObjectContext);
     const about = info.about;
-    console.log(about)
+    const defaultSkill = about.skills[0].title
+    const [aboutDetails, setAboutDetails] = useState(defaultSkill);
+    const aboutNavClick = (e) => {
+        setAboutDetails(e.target.value)
+    }
+
     const aboutNavMap = about.skills.map((skill, key) => {
         return (
             <li key={key}>
-                <button>{skill.title}</button>
+                <button value={skill.title} onClick={aboutNavClick}>{skill.title}</button>
             </li>
         )
     })
@@ -23,7 +28,7 @@ function About() {
             </ul>
             <div>
                 map through these
-                <AboutDetail />
+                <AboutDetail aboutDetails={aboutDetails} />
             </div>
         </div>
     </div>
