@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ObjectContext  } from '../context/ObjectContext';
 
-function AboutDetail(props) {
+function AboutCard(props) {
     const { info } = useContext(ObjectContext);
     const skillsList = info.about.skills;
     console.log("props ", props)
@@ -11,7 +11,7 @@ function AboutDetail(props) {
     const skillsMap = skillsFilter[0].details.map((skill, key) => {
         return (
             <div key={key}>
-                <p>{skill.name}{skill.subname ? ` - ${skill.subname}` : '' }</p>
+                <p><span>{skill.name}</span>{skill.subname ? ` - ${skill.subname}` : '' }</p>
                 <p>{skill.desc}</p>
                 <p>{skill.location}</p>
             
@@ -19,10 +19,10 @@ function AboutDetail(props) {
         )
     })
   return (
-    <div>
+    <div className='my-3'>
         {skillsMap}
     </div>
   )
 }
 
-export default AboutDetail
+export default AboutCard

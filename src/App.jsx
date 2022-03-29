@@ -10,9 +10,6 @@ function App() {
     <div className="flex w-full justify-center flex-col">
         <Home/>
         <div>
-          Projects
-        </div>
-        <div>
           Contact
         </div>
         <footer>

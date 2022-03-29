@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, Navbar, Hero } from './index'
+import { About, Navbar, Hero, Projects } from './index'
 
 function Home() {
     
@@ -8,6 +8,7 @@ function Home() {
         <Navbar />
         <Hero />
         <About />
+        <Projects />
     </div>
   )
 }

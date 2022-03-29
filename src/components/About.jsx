@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { ObjectContext  } from '../context/ObjectContext';
-import AboutDetail from './AboutDetail';
+import AboutCard from './AboutCard';
 
 function About() {
     const { info } = useContext(ObjectContext);
@@ -14,21 +14,25 @@ function About() {
     const aboutNavMap = about.skills.map((skill, key) => {
         return (
             <li key={key}>
-                <button value={skill.title} onClick={aboutNavClick}>{skill.title}</button>
+                <button  className='text-lg border-b' value={skill.title} onClick={aboutNavClick}>{skill.title}</button>
             </li>
         )
     })
   return (
     <div className='w-full flex justify-center bg-zinc-800 py-4'>
-        <div className='flex flex-col'>
-            <h2>About</h2>
-            <p>{about.description}</p>
-            <ul className='flex'>
-                {aboutNavMap}
-            </ul>
-            <div>
-                map through these
-                <AboutDetail aboutDetails={aboutDetails} />
+        <div className='flex w-3/5'>
+            <div className='w-1/3'>
+                <p>Image <br /> PlaceHolder</p>
+            </div>
+            <div className='w-2/3'>
+                <h2 className='text-4xl font-bold'>About</h2>
+                <p className='my-2'>{about.description}</p>
+                <ul className='flex justify-between'>
+                    {aboutNavMap}
+                </ul>
+                <div>
+                    <AboutCard aboutDetails={aboutDetails} />
+                </div>
             </div>
         </div>
     </div>
