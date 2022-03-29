@@ -8,14 +8,7 @@ function App() {
   return (
     <ObjectContext.Provider value={{ info }}>
     <div className="flex w-full justify-center flex-col">
-        <Home/>
-        <div>
-          Contact
-        </div>
-        <footer>
-          Footer
-        </footer>
-      
+        <Home/>      
     </div>
     </ObjectContext.Provider>
   );
