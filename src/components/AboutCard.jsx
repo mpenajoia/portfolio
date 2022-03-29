@@ -4,7 +4,6 @@ import { ObjectContext  } from '../context/ObjectContext';
 function AboutCard(props) {
     const { info } = useContext(ObjectContext);
     const skillsList = info.about.skills;
-    console.log("props ", props)
     const skillsFilter = skillsList.filter(value => {
         return value.title === props.aboutDetails
     })

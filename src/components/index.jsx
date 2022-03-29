@@ -3,6 +3,5 @@ export { default as Hero } from "./Hero";
 export { default as Navbar } from "./Navbar";
 export { default as AboutCard } from "./AboutCard";
 export { default as Projects } from "./Projects";
-export { default as ProjectCard } from "./ProjectCard";
 export { default as Contact } from "./Contact";
 export { default as Footer } from "./Footer";

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div className='w-full flex justify-center bg-zinc-300 py-4'>
+    <div className='w-full flex justify-center bg-black py-4 my-40'>
         <h1 className='text-5xl font-black'>
             My name is Marco Silva &
             <br/>

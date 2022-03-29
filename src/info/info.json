@@ -90,10 +90,28 @@
     },
     "projects": [
         {
-            "title": "",
-            "link": "",
-            "github": "",
-            "desc": ""
+            "title": "cryptoFOMO",
+            "link": "https://mpenajoia.github.io/CryptoDreamsApp/#/",
+            "github": "https://github.com/mpenajoia/CryptoDreamsApp",
+            "desc": "Using a cryptocurrency API for pricing, a user can calculate what an investment in any cryptocurrency COULD have be worth in today's dollars had they invested a certain time ago.",
+            "tech": ["React", "API"],
+            "image":""
+        },
+        {
+            "title": "Resume Builder",
+            "link": "https://penajoia.com/resume",
+            "github": "https://github.com/mpenajoia/resume-page",
+            "desc": "A React app for users to fill in an elegant and easily deployable online version of their resume.",
+            "tech": ["React", "TailwindCSS", "JSON"],
+            "image":""
+        },
+        {
+            "title": "Netfolio",
+            "link": "https://github.com/mpenajoia/Netfolio-Front",
+            "github": "https://github.com/mpenajoia/Netfolio-Front",
+            "desc": "Netfolio was designed to be a one stop shop for an individual's ability to easily check their net worth across multiple asset classes.",
+            "tech": ["React Native", "Node", "Express", "Mongo DB"],
+            "image":""
         }
     ]
 }
