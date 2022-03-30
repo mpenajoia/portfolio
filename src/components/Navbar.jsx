@@ -3,7 +3,7 @@ import { ImLinkedin2, ImGithub, ImCamera } from 'react-icons/im'
 
 function Navbar() {
   return (
-    <div className='w-full fixed flex justify-center bg-zinc-800 py-4'>
+    <div className='w-full fixed z-10 flex justify-center bg-zinc-800 py-4'>
         <nav className='flex justify-between w-3/4 content-center'>
             <div className='w-1/3'>
                 <ul className='flex items-center justify-between'>
