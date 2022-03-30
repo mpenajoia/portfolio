@@ -29,7 +29,7 @@ function Projects() {
     )
   })
   return (
-    <div className='flex w-full justify-center my-10' id="projects">
+    <div className='flex w-full justify-center my-10  target:pt-[60px]' id="projects">
       <div className='flex w-3/4 justify-between gap-6 '>
         {projectMap}
       </div>
