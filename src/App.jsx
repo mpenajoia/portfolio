@@ -2,14 +2,17 @@ import { useState } from "react";
 import Home from "./components/Home";
 import { ObjectContext } from "./context/ObjectContext";
 import Info from './info/info.json'
+import { BrowserRouter as Router} from 'react-router-dom'
 
 function App() {
   const [info, setInfo] = useState(Info)
   return (
     <ObjectContext.Provider value={{ info }}>
-    <div className="flex w-full justify-center flex-col">
-        <Home/>      
-    </div>
+      <Router>
+        <div className="flex w-full justify-center flex-col">
+            <Home/>      
+        </div>
+      </Router>
     </ObjectContext.Provider>
   );
 }

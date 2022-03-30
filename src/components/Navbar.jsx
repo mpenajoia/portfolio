@@ -1,31 +1,24 @@
-import React from 'react'
+import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import { ImLinkedin2, ImGithub, ImCamera } from 'react-icons/im'
 
 function Navbar() {
   return (
     <div className='w-full fixed z-10 flex justify-center bg-zinc-800 py-4'>
-        <nav className='flex justify-between w-3/4 content-center'>
+        <nav className='flex justify-between w-2/3 content-center'>
             <div className='w-1/3'>
                 <ul className='flex items-center justify-between'>
                     <li>
-                        <a href='#'>
-                            Home        
-                        </a>
+                        <Link to="#" smooth> Home </Link>
                     </li>
                     <li>
-                        <a href='#'>
-                            About        
-                        </a>
+                        <Link to="#about" smooth> About </Link>
                     </li>
                     <li>
-                        <a href='#'>
-                            Projects        
-                        </a>
+                        <Link to="#projects" smooth> Projects </Link>
                     </li>
                     <li>
-                        <a href='#'>
-                            Contact        
-                        </a>
+                        <Link to="#contact" smooth> Contact </Link>
                     </li>
                 </ul>
             </div>
