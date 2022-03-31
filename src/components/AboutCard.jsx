@@ -9,15 +9,15 @@ function AboutCard(props) {
     })
     const skillsMap = skillsFilter[0].details.map((skill, key) => {
         return (
-            <div key={key}>
-                <p><span>{skill.name}</span>{skill.subname ? ` - ${skill.subname}` : '' }</p>
-                <p>{skill.desc}</p>
-                <p>{skill.location}</p>
+            <div className='mr-6' key={key}>
+                <p className='text-zinc-300 font-black'>{skill.name}</p>
+                <p className='text-yellow-500'>{skill.subname}</p>
+                <p className='text-zinc-500'>{skill.location}</p>
             </div>
         )
     })
   return (
-    <div className='my-3'>
+    <div className='my-3 flex flex-wrap'>
         {skillsMap}
     </div>
   )

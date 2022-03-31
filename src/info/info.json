@@ -9,15 +9,15 @@
                         "name": "General Assembly",
                         "subname": "Software Engineering",
                         "year": "2021",
-                        "desc": "Certificate of Completion",
+                        "desc": "",
                         "location": "Los Angeles, CA, USA",
                         "link": ""
                     },
                     {
-                        "name": "New Jersey Institute of Technology",
-                        "subname": "Business",
+                        "name": "NJIT",
+                        "subname": "B.S. in Business",
                         "year": "2007-2011",
-                        "desc": "B.S. in Business",
+                        "desc": "",
                         "location": "Newark, NJ, USA",
                         "link": ""
                     }
@@ -70,7 +70,7 @@
                 "details": [
                     {
                         "name": "English",
-                        "subname": "",
+                        "subname": "Native",
                         "year": "",
                         "desc": "",
                         "location": "",
@@ -78,7 +78,15 @@
                     },
                     {
                         "name": "Portuguese",
-                        "subname": "",
+                        "subname": "Fluent",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "Spanish",
+                        "subname": "Intermediate",
                         "year": "",
                         "desc": "",
                         "location": "",
