@@ -15,10 +15,11 @@ function About() {
     const aboutNavMap = about.skills.map((skill, key) => {
         return (
             <li key={key}>
-                <button  className='text-lg focus:text-yellow-500 focus:border-b-2 focus:border-yellow-500 after:content-none' value={skill.title} onClick={aboutNavClick}>{skill.title}</button>
+                <button className='text-lg font-bold text-yellow-500 focus:text-yellow-400 focus:border-b-2 focus:border-yellow-500 after:content-none' value={skill.title} onClick={aboutNavClick}>{skill.title}</button>
             </li>
         )
     })
+    
   return (
     <div className='w-full flex justify-center bg-zinc-800 py-6 target:pt-[60px] ' id={'about'}>
         <div className='flex w-3/5 gap-5'>
@@ -26,9 +27,9 @@ function About() {
                 <img src={Photo} alt="Me" />
             </div>
             <div className='w-2/3'>
-                <h2 className='text-4xl font-bold'>About Me</h2>
-                <p className='my-2'>{about.description}</p>
-                <ul className='flex justify-between'>
+                <h2 className='text-6xl font-bold'>About Me</h2>
+                <p className='my-2 text-zinc-300'>{about.description}</p>
+                <ul className='flex justify-between mt-7'>
                     {aboutNavMap}
                 </ul>
                 <div>

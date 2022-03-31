@@ -13,7 +13,6 @@ function AboutCard(props) {
                 <p><span>{skill.name}</span>{skill.subname ? ` - ${skill.subname}` : '' }</p>
                 <p>{skill.desc}</p>
                 <p>{skill.location}</p>
-            
             </div>
         )
     })
