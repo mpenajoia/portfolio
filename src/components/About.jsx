@@ -21,7 +21,7 @@ function About() {
     })
     
   return (
-    <div className='w-full flex justify-center bg-zinc-800 py-6 target:pt-[60px] ' id={'about'}>
+    <div className='w-full flex justify-center bg-zinc-900 py-24 target:pt-[100px] ' id={'about'}>
         <div className='flex w-3/5 gap-5'>
             <div className='w-1/3 self-center'>
                 <img src={Photo} alt="Me" />

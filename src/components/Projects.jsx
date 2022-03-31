@@ -11,10 +11,10 @@ function ProjectCard(project, key) {
   })
   console.log(projectImage)
   return (
-    <div key={key} style={{ backgroundImage: `url(${[projectImage[0]]})`}} className='w-1/3 bg-cover bg-center rounded-md flex flex-wrap text-black hover:scale-105 ease-in-out duration-300'>
-      <div className='flex flex-col items-center w-full h-full text-white hover:text-yellow-500 hover:bg-none bg-gradient-to-t from-black/[.5] to-black/[.3] py-64'>
-        <h4 className='text-3xl font-bold'>{project.title}</h4>
-        {/* <p>{project.link}</p> */}
+    <div key={key} style={{ backgroundImage: `url(${[projectImage[0]]})`}} className='w-1/3 bg-cover bg-center rounded-md flex flex-wrap hover:scale-105 ease-in-out duration-300'>
+
+      <div className='flex flex-col justify-center items-center w-full py-60  text-white hover:text-yellow-500  hover:bg-gradient-to-t from-black/[.8] to-black/[.2] overflow-hidden group'>
+          <h4 className='text-3xl font-bold -translate-y-80 group-hover:translate-y-0 duration-300 ease-in-out'>{project.title}</h4>
       </div>
     </div>
   )
@@ -29,7 +29,7 @@ function Projects() {
     )
   })
   return (
-    <div className='flex flex-col w-full justify-center items-center my-10 py-16  target:pt-[60px]' id="projects">
+    <div className='flex flex-col w-full justify-center items-center my-10 py-16  target:pt-[100px]' id="projects">
       <h2 className='text-6xl mb-10 font-bold'>Projects</h2>
       <div className='flex w-3/4 justify-between gap-6 '>
         {projectMap}
