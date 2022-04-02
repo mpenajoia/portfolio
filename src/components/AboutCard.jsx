@@ -17,7 +17,7 @@ function AboutCard(props) {
         )
     })
   return (
-    <div className='my-3 flex flex-wrap'>
+    <div className='flex flex-wrap flex-col justify-start gap-3'>
         {skillsMap}
     </div>
   )

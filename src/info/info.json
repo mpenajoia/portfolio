@@ -45,7 +45,7 @@
                 ]
             },
             {
-                "title": "Computer Languages",
+                "title": "Languages",
                 "details": [
                     {
                         "name": "React",
@@ -62,11 +62,51 @@
                         "desc": "",
                         "location": "",
                         "link": ""
+                    },
+                    {
+                        "name": "HTML5",
+                        "subname": "",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "CSS3",
+                        "subname": "",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "Node",
+                        "subname": "",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "Express",
+                        "subname": "",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "MongoDB",
+                        "subname": "",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
                     }
                 ]
             },
             {
-                "title": "Human Languages",
+                "title": "Skills",
                 "details": [
                     {
                         "name": "English",
@@ -87,6 +127,30 @@
                     {
                         "name": "Spanish",
                         "subname": "Intermediate",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "Adobe CC Suite",
+                        "subname": "",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "Google Suite",
+                        "subname": "",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "Zoom",
+                        "subname": "",
                         "year": "",
                         "desc": "",
                         "location": "",

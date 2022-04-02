@@ -8,14 +8,20 @@ function About() {
     const about = info.about;
     const defaultSkill = about.skills[0].title
     const [aboutDetails, setAboutDetails] = useState(defaultSkill);
+    const [isActive, setIsActive] = useState('')
     const aboutNavClick = (e) => {
         setAboutDetails(e.target.value)
+        setIsActive('active')
+        console.log(e.target.children[0].className)
     }
+
 
     const aboutNavMap = about.skills.map((skill, key) => {
         return (
-            <li key={key}>
-                <button className='text-lg font-bold text-yellow-500 focus:text-yellow-400 focus:border-b-2 focus:border-yellow-500 after:content-none' value={skill.title} onClick={aboutNavClick}>{skill.title}</button>
+            <li key={key} className='group'>
+                <button className='text-lg font-bold duration-300 ease-in-out focus:text-yellow-500 hover:text-yellow-500 ' value={skill.title} onClick={aboutNavClick}>{skill.title}
+                <div className={`w-6 border-t group-hover:w-full group-hover:border-yellow-500 ${isActive}`}></div></button>
+                
             </li>
         )
     })
@@ -29,11 +35,12 @@ function About() {
             <div className='w-2/3'>
                 <h2 className='text-6xl font-bold'>About Me</h2>
                 <p className='my-2 text-zinc-300'>{about.description}</p>
-                <ul className='flex justify-between mt-7'>
-                    {aboutNavMap}
-                </ul>
-                <div>
+                <div className='flex w-4/5 mt-7 h-48 '>
+                    <ul className='flex justify-start flex-col mr-6'>
+                        {aboutNavMap}
+                    </ul>
                     <AboutCard aboutDetails={aboutDetails} />
+                    
                 </div>
             </div>
         </div>
