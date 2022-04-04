@@ -24,10 +24,3 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
-.active {
-  width:100%;
-}
-
-#is-active {
-  color: red
-}
