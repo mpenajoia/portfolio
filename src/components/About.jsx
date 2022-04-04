@@ -11,8 +11,8 @@ function About() {
     const [isActive, setIsActive] = useState('')
     const aboutNavClick = (e) => {
         setAboutDetails(e.target.value)
-        setIsActive('active')
-        console.log(e.target.children[0].className)
+        if(e.target.children[0].className.includes('active'))
+        console.log(e.target.children[0].className + ' active')
     }
 
 
