@@ -1,29 +1,32 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ObjectContext  } from '../context/ObjectContext';
 import { HashLink as Link } from 'react-router-hash-link';
-import { ImLinkedin2, ImGithub, ImCamera } from 'react-icons/im'
+import { Icon } from 'react-icons-kit'
+import * as icons from 'react-icons-kit/icomoon'
 
 function Navbar() {
+    const { info } = useContext(ObjectContext);
+    const social = info.social
+    const socialMap = social.map((item, key) => {
+        return(
+            <a key={key} href={item.link} target="_blank" rel="noreferrer" >
+                    <Icon className='hover:text-yellow-500 ease-in-out hover:scale-125 duration-300' size={18} icon={icons[item.icon]}/>
+            </a>
+        )
+    })
   return (
     <div className='w-full fixed z-10 top-0 flex justify-center bg-zinc-900 py-4'>
         <nav className='flex justify-between w-3/5 content-center'>
-            <div className='w-1/3'>
-                <ul className='flex items-center justify-between'>
-                    <li><Link to="#" smooth> Home </Link></li>
-                    <li><Link to="#about" smooth> About </Link></li>
-                    <li><Link to="#projects" smooth> Projects </Link></li>
-                    <li><Link to="#contact" smooth> Contact </Link></li>
+            <div className='w-2/5'>
+                <ul className='flex items-center justify-between font-bold'>
+                    <li><Link to="#" smooth className='hover:text-yellow-500 ease-in-out hover:scale-125 duration-300'> Home </Link></li>
+                    <li><Link to="#about" smooth className='hover:text-yellow-500 ease-in-out hover:scale-125 duration-300'> About </Link></li>
+                    <li><Link to="#projects" smooth className='hover:text-yellow-500 ease-in-out hover:scale-125 duration-300'> Projects </Link></li>
+                    <li><Link to="#contact" smooth className='hover:text-yellow-500 ease-in-out hover:scale-125 duration-300'> Contact </Link></li>
                 </ul>
             </div>
             <div className='flex items-center justify-between w-1/6'>
-                <a href='#'>
-                    <ImLinkedin2 className='hover:text-yellow-500 ease-in-out hover:scale-125 duration-300' />
-                </a>
-                <a href='#'>
-                    <ImGithub className='hover:text-yellow-500 ease-in-out hover:scale-125 duration-300' />
-                </a>
-                <a href='#'>
-                    <ImCamera className='hover:text-yellow-500 ease-in-out hover:scale-125 duration-300' />
-                </a>
+                {socialMap}
             </div>
         </nav>
     </div>

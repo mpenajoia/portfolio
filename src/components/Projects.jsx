@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ObjectContext } from '../context/ObjectContext';
 import { Cryptofomo, ResumeBuilder } from '../img/index';
 import Netfolio from '../img/netfolio.jpg';
-import { ImGithub } from 'react-icons/im'
+// import { ImGithub } from 'react-icons/im'
 
 
 function ProjectCard(project, key) {
@@ -30,7 +30,7 @@ function ProjectCard(project, key) {
             </div>
             <p className='my-2 px-6 text-white'>{project.desc}</p>
             <a href={project.github} target="_blank" rel="noreferrer" >
-              <ImGithub className='text-5xl duration-300 ease-in-out hover:text-yellow-500'/>
+              {/* <ImGithub className='text-5xl duration-300 ease-in-out hover:text-yellow-500'/> */}
             </a>
           </div>
       </div>
