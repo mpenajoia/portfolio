@@ -1,15 +1,13 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
 import { ObjectContext } from '../context/ObjectContext';
-import { Cryptofomo, ResumeBuilder } from '../img/index';
-import Netfolio from '../img/netfolio.jpg';
-// import { ImGithub } from 'react-icons/im'
+import { Cryptofomo, ResumeBuilder, Netfolio } from '../img/index';
+import { Icon } from 'react-icons-kit'
+import * as icons from 'react-icons-kit/icomoon'
 
 
 function ProjectCard(project, key) {
   const projectImagesList = [Netfolio, Cryptofomo, ResumeBuilder]
   const projectImage = projectImagesList.filter((img) => {
-    console.log(img)
     return img.includes(project.image.toLowerCase()) 
   })
   const techStack = project.tech.map((tech, key) => {
@@ -30,7 +28,7 @@ function ProjectCard(project, key) {
             </div>
             <p className='my-2 px-6 text-white'>{project.desc}</p>
             <a href={project.github} target="_blank" rel="noreferrer" >
-              {/* <ImGithub className='text-5xl duration-300 ease-in-out hover:text-yellow-500'/> */}
+              <Icon icon={icons.github} size={32} className='duration-300 ease-in-out hover:text-yellow-500'/>
             </a>
           </div>
       </div>
