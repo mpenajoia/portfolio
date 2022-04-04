@@ -8,20 +8,15 @@ function About() {
     const about = info.about;
     const defaultSkill = about.skills[0].title
     const [aboutDetails, setAboutDetails] = useState(defaultSkill);
-    const [isActive, setIsActive] = useState('')
     const aboutNavClick = (e) => {
         setAboutDetails(e.target.value)
-        if(e.target.children[0].className.includes('active'))
-        console.log(e.target.children[0].className + ' active')
     }
-
 
     const aboutNavMap = about.skills.map((skill, key) => {
         return (
-            <li key={key} className='group'>
-                <button className='text-lg font-bold duration-300 ease-in-out focus:text-yellow-500 hover:text-yellow-500 ' value={skill.title} onClick={aboutNavClick}>{skill.title}
-                <div className={`w-6 border-t group-hover:w-full group-hover:border-yellow-500 ${isActive}`}></div></button>
-                
+            <li key={key} className='group' onClick={aboutNavClick} >
+                <button className={`text-lg font-bold duration-300 ease-in-out focus:text-yellow-500 hover:text-yellow-500 ${(aboutDetails === skill.title) ? 'text-yellow-500' : 'text-white'}`} value={skill.title}>{skill.title}
+                <div className={`border-t-2 duration-300 ease-in-out group-hover:w-full group-hover:border-yellow-500 ${(aboutDetails === skill.title) ? 'w-full border-yellow-500' : 'w-6'} `}></div></button>
             </li>
         )
     })
@@ -40,7 +35,6 @@ function About() {
                         {aboutNavMap}
                     </ul>
                     <AboutCard aboutDetails={aboutDetails} />
-                    
                 </div>
             </div>
         </div>

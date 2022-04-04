@@ -27,3 +27,7 @@ body {
 .active {
   width:100%;
 }
+
+#is-active {
+  color: red
+}
