@@ -24,7 +24,7 @@ function Contact() {
   }
 
   return (
-    <div className='flex justify-center my-10  target:pt-[60px]' id="contact">
+    <div className='flex justify-center my-10 target:pt-[60px]' id="contact">
         <div className='flex flex-col w-2/5'>
             <h2 className='text-6xl mb-10 font-bold text-center'>Get in touch</h2>
             <form className='flex flex-col gap-y-3 ' onSubmit={sendEmail} ref={form} >
