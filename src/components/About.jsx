@@ -1,7 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { ObjectContext  } from '../context/ObjectContext';
 import AboutCard from './AboutCard';
-import Photo from '../img/inkMe.png'
+import Photo from '../img/inkMe.png';
+import { Icon } from 'react-icons-kit';
+import * as icons from 'react-icons-kit/icomoon';
 
 function About() {
     const { info } = useContext(ObjectContext);
@@ -24,8 +26,15 @@ function About() {
   return (
     <div className='w-full flex justify-center bg-zinc-900 py-24 target:pt-[100px] ' id={'about'}>
         <div className='flex w-3/5 gap-5'>
-            <div className='w-1/3 self-center'>
+            <div className='w-1/3 self-center flex flex-col gap-5 items-center'>
                 <img src={Photo} alt="Me" />
+                <div className='flex justify-center items-center relative w-3/5 '>
+                    <a href="https://penajoia.com/resume" className=' relative flex gap-2 justify-center bg-zinc-700 hover:bg-yellow-500 duration-300 ease-in-out rounded py-3 px-4 font-bold' target="_blank" rel="noreferrer">
+                        <Icon icon={icons.fileText2} />
+                        <span>Resume/CV</span>
+                    </a>
+
+                </div>
             </div>
             <div className='w-2/3'>
                 <h2 className='text-6xl font-bold'>About Me</h2>
@@ -36,6 +45,7 @@ function About() {
                     </ul>
                     <AboutCard aboutDetails={aboutDetails} />
                 </div>
+                
             </div>
         </div>
     </div>
