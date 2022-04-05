@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { ObjectContext  } from '../context/ObjectContext';
 
-function AboutCard(props) {
+function MobileAboutCard(props) {
     const { info } = useContext(ObjectContext);
     const skillsList = info.about.skills;
     const skillsFilter = skillsList.filter(value => {
-        return value.title === props.aboutDetails
+        return value.title === props.aboutCardFilter[0].title
     })
     const skillsMap = skillsFilter[0].details.map((skill, key) => {
         return (
@@ -23,4 +23,4 @@ function AboutCard(props) {
   )
 }
 
-export default AboutCard
+export default MobileAboutCard
