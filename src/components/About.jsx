@@ -13,11 +13,11 @@ function About() {
     const [aboutDetails, setAboutDetails] = useState(defaultSkill);
     const [mobileDetails, setMobileDetails] = useState();
     const aboutNavClick = (e) => {
-        setAboutDetails(e.target.value)
+        setAboutDetails(e.target.value || e.target.attributes[1].nodeValue || e.target.children[0].attributes[1].nodeValue)
         if(aboutDetails === mobileDetails){
             setMobileDetails()
         }else{
-            setMobileDetails(e.target.value)
+            setMobileDetails(e.target.value || e.target.attributes[1].nodeValue || e.target.children[0].attributes[1].nodeValue)
         }
     }
 
@@ -30,7 +30,7 @@ function About() {
                 <div className=' group w-full flex flex-col justify-center' onClick={aboutNavClick}>                    
                     <button className={`flex flex-col items-center md:items-start text-xl md:text-lg font-bold duration-300 ease-in-out md:focus:text-yellow-500 md:hover:text-yellow-500 ${(aboutDetails === skill.title) ? 'md:text-yellow-500' : 'text-white'} bg-black md:bg-transparent py-5 md:py-0 ${(mobileDetails === skill.title) ? 'focus:bg-yellow-500 focus:text-zinc-800' : ''} md:focus:bg-transparent`} value={skill.title}>{skill.title}
                         
-                        <div className={` hidden md:block border-t-2 duration-300 ease-in-out group-hover:w-full group-hover:border-yellow-500 ${(aboutDetails === skill.title) ? 'w-full border-yellow-500' : 'w-0'}`}></div>
+                        <div className={` hidden md:block border-t-2 duration-300 ease-in-out group-hover:w-full group-hover:border-yellow-500 ${(aboutDetails === skill.title) ? 'w-full border-yellow-500' : 'w-0'}`} value={skill.title}></div>
                     </button>
                 </div>
                 {(mobileDetails === skill.title) ?
