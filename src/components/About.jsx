@@ -15,20 +15,21 @@ function About() {
     const aboutNavClick = (e) => {
         setAboutDetails(e.target.value || e.target.attributes[1].nodeValue || e.target.children[0].attributes[1].nodeValue)
         if(aboutDetails === mobileDetails){
-            setMobileDetails()
+            setMobileDetails(e.target.value)
         }else{
             setMobileDetails(e.target.value || e.target.attributes[1].nodeValue || e.target.children[0].attributes[1].nodeValue)
         }
     }
-
+    
     const aboutNavMap = about.skills.map((skill, key) => {
+        console.log(mobileDetails, skill.title)
         const aboutCardFilter = about.skills.filter((value) => {
             return value.title === skill.title
         })
         return (
             <li key={key} >
                 <div className=' group flex flex-col md:block justify-center' onClick={aboutNavClick}>                    
-                    <button className={`flex flex-col items-center md:items-start text-xl md:text-lg font-bold duration-300 ease-in-out md:focus:text-yellow-500 md:hover:text-yellow-500 ${(aboutDetails === skill.title) ? 'md:text-yellow-500' : 'text-white'} bg-black md:bg-transparent py-5 md:py-0 ${(mobileDetails === skill.title) ? 'focus:bg-yellow-500 focus:text-zinc-800' : ''} md:focus:bg-transparent`} value={skill.title}>{skill.title}
+                    <button className={`flex flex-col items-center md:items-start text-xl md:text-lg font-bold duration-300 ease-in-out md:focus:text-yellow-500 md:hover:text-yellow-500 ${(aboutDetails === skill.title) ? 'md:text-yellow-500' : 'text-white'} bg-black md:bg-transparent py-5 md:py-0 ${(mobileDetails === skill.title) ? 'bg-yellow-500 text-zinc-800' : ''} md:focus:bg-transparent`} value={skill.title}>{skill.title}
                         
                         <div className={` hidden md:block border-t-2 duration-300 ease-in-out group-hover:w-full group-hover:border-yellow-500 ${(aboutDetails === skill.title) ? 'w-full border-yellow-500' : 'w-0'}`} value={skill.title}></div>
                     </button>
@@ -49,8 +50,8 @@ function About() {
             <div className='flex flex-col md:flex-row gap-5'>
                 <div className=' md:w-2/5 self-center flex flex-col gap-8 md:gap-5 items-center'>
                     <img src={Photo} alt="Me" />
-                    <div className='flex justify-center items-center relative w-3/5 '>
-                        <a href="https://penajoia.com/resume" className=' relative flex gap-2 justify-center bg-zinc-700 hover:bg-yellow-500 duration-300 ease-in-out rounded py-3 px-4 font-bold' target="_blank" rel="noreferrer">
+                    <div className='flex justify-center items-center w-3/5 '>
+                        <a href="https://penajoia.com/resume" className=' flex gap-2 justify-center bg-zinc-700 hover:bg-yellow-500 duration-300 ease-in-out rounded py-3 px-4 font-bold' target="_blank" rel="noreferrer">
                             <Icon icon={icons.fileText2} />
                             <span>Resume/CV</span>
                         </a>
