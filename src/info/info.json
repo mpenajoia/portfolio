@@ -17,29 +17,8 @@
         }
     ],
     "about": {
-        "description": "Front end developer who completed General Assembly’s Software Engineering Bootcamp where I built MERN stack applications. With a background in both the film and motorcycle industry I bring a creative design eye with hands-on technical experience to software engineering. ",
+        "description": "Front end developer who completed General Assembly’s Software Engineering Bootcamp where I built a few MERN stack applications. With a background in both the film and motorcycle industry I bring a creative design eye with hands-on technical experience to software engineering. ",
         "skills": [
-            {
-                "title": "Education",
-                "details": [
-                    {
-                        "name": "General Assembly",
-                        "subname": "Software Engineering",
-                        "year": "2021",
-                        "desc": "",
-                        "location": "Los Angeles, CA, USA",
-                        "link": ""
-                    },
-                    {
-                        "name": "NJIT",
-                        "subname": "B.S. in Business",
-                        "year": "2007-2011",
-                        "desc": "",
-                        "location": "Newark, NJ, USA",
-                        "link": ""
-                    }
-                ]
-            },
             {
                 "title": "Experience",
                 "details": [
@@ -57,6 +36,34 @@
                         "year": "2019-2021",
                         "desc": "",
                         "location": "Eagle Rock, CA, USA",
+                        "link": ""
+                    },
+                    {
+                        "name": "Freelance Filmmaker",
+                        "subname": "First AC",
+                        "year": "2013-2020",
+                        "desc": "",
+                        "location": "New York, NY, USA",
+                        "link": ""
+                    }
+                ]
+            },{
+                "title": "Education",
+                "details": [
+                    {
+                        "name": "General Assembly",
+                        "subname": "Software Engineering",
+                        "year": "2021",
+                        "desc": "",
+                        "location": "Los Angeles, CA, USA",
+                        "link": ""
+                    },
+                    {
+                        "name": "NJIT",
+                        "subname": "B.S. in Business",
+                        "year": "2007-2011",
+                        "desc": "",
+                        "location": "Newark, NJ, USA",
                         "link": ""
                     }
                 ]
@@ -126,30 +133,6 @@
                 "title": "Skills",
                 "details": [
                     {
-                        "name": "English",
-                        "subname": "Native",
-                        "year": "",
-                        "desc": "",
-                        "location": "",
-                        "link": ""
-                    },
-                    {
-                        "name": "Portuguese",
-                        "subname": "Fluent",
-                        "year": "",
-                        "desc": "",
-                        "location": "",
-                        "link": ""
-                    },
-                    {
-                        "name": "Spanish",
-                        "subname": "Intermediate",
-                        "year": "",
-                        "desc": "",
-                        "location": "",
-                        "link": ""
-                    },
-                    {
                         "name": "Adobe CC Suite",
                         "subname": "",
                         "year": "",
@@ -168,6 +151,30 @@
                     {
                         "name": "Zoom",
                         "subname": "",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "English",
+                        "subname": "Native",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "Portuguese",
+                        "subname": "Fluent",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "Spanish",
+                        "subname": "Intermediate",
                         "year": "",
                         "desc": "",
                         "location": "",
