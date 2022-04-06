@@ -11,8 +11,10 @@ function About() {
     const about = info.about;
     const defaultSkill = about.skills[0].title
     const [aboutDetails, setAboutDetails] = useState(defaultSkill);
+    const [mobileDetails, setMobileDetails] = useState();
     const aboutNavClick = (e) => {
         setAboutDetails(e.target.value)
+        setMobileDetails(e.target.value)
     }
 
     const aboutNavMap = about.skills.map((skill, key) => {
@@ -21,21 +23,24 @@ function About() {
         })
         return (
             <li key={key} >
-                <div  className='group w-full flex flex-col justify-center' onClick={aboutNavClick}>                    
-                    <button className={` flex flex-col items-center md:items-start text-lg font-bold duration-300 ease-in-out focus:text-yellow-500 hover:text-yellow-500 ${(aboutDetails === skill.title) ? 'text-yellow-500' : 'text-white'}`} value={skill.title}>{skill.title}
-                        <div className={`border-t-2 duration-300 ease-in-out group-hover:w-full group-hover:border-yellow-500 ${(aboutDetails === skill.title) ? 'w-full border-yellow-500' : 'w-0'} `}></div>
+                <div className=' group w-full flex flex-col justify-center' onClick={aboutNavClick}>                    
+                    <button className={`flex flex-col items-center md:items-start text-xl md:text-lg font-bold duration-300 ease-in-out focus:text-yellow-500 hover:text-yellow-500 ${(aboutDetails === skill.title) ? 'text-yellow-500' : 'text-white'} bg-black md:bg-transparent pt-5 md:pt-0 `} value={skill.title}>{skill.title}
+                        
+                        <div className={` border-t-2 duration-300 ease-in-out group-hover:w-full group-hover:border-yellow-500 ${(aboutDetails === skill.title) ? 'w-full border-yellow-500' : 'w-0'}`}></div>
                     </button>
                 </div>
-                <div className="md:hidden cursor-not-allowed">
-                    <MobileAboutCard aboutCardFilter={aboutCardFilter} />
-                </div>
+                {(mobileDetails === skill.title) ?
+                    <div className='md:hidden '>
+                        <MobileAboutCard aboutCardFilter={aboutCardFilter} />
+                    </div>
+                : '' }
             </li>
         )
     })
     
   return (
-    <div className='w-full flex justify-center bg-zinc-900 py-16 target:pt-[100px] ' id={'about'}>
-        <div className='flex flex-col w-5/6 md:w-2/3 gap-5'>
+    <div className='w-full flex justify-center bg-zinc-900 md:py-16 pt-10 md:target:pt-[100px] ' id={'about'}>
+        <div className='flex flex-col w-full md:w-2/3 gap-5'>
             <h2 className='text-5xl md:text-6xl font-bold text-center mb-10'>About Me</h2>
             <div className='flex flex-col md:flex-row gap-5'>
                 <div className=' md:w-2/5 self-center flex flex-col gap-5 items-center'>
@@ -49,7 +54,7 @@ function About() {
                     </div>
                 </div>
                 <div className='w-full md:w-3/5'>
-                    <p className='my-2 text-zinc-300'>{about.description}</p>
+                    <p className='my-2 text-zinc-300 px-5 md:px-0'>{about.description}</p>
                     <div className='flex flex-col flex-wrap md:flex-row w-full mt-7 md:h-32 '>
                         <ul className='flex justify-center md:justify-start flex-col mr-0 md:mr-6'>
                             {aboutNavMap}

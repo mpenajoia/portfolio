@@ -54,7 +54,7 @@ function Projects() {
     )
   })
   return (
-    <div className='flex flex-col w-full justify-center items-center my-10 py-16  target:pt-[100px]' id="projects">
+    <div className='flex flex-col w-full justify-center items-center my-10 md:py-16 pt-10 md:target:pt-[100px]' id="projects">
       <h2 className='text-5xl md:text-6xl mb-10 font-bold'>Projects</h2>
       <div className='flex md:flex-row flex-col w-5/6 md:w-3/5 justify-between gap-6 h-420px'>
         {projectMap}
