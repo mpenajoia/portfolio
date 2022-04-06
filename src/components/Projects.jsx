@@ -16,9 +16,9 @@ function ProjectCard(project, key) {
     )
   })
   return (
-    <div key={key} style={{ backgroundImage: `url(${[projectImage[0]]})`}} className='w-full md:w-1/3 bg-cover bg-center rounded-md flex flex-wrap hover:scale-105 ease-in-out duration-300'>
+    <div key={key} style={{ backgroundImage: `url(${[projectImage[0]]})`}} className='w-full lg:w-1/3 bg-cover bg-top lg:bg-center rounded-md flex flex-wrap hover:scale-105 ease-in-out duration-300'>
 
-      <div className='flex flex-col justify-center items-center w-full h-96  duration-300 hover:bg-gradient-to-t from-black/[.85] to-black/[.35] md:overflow-hidden group'>
+      <div className='flex flex-col justify-center items-center w-full h-96 duration-300 hover:bg-gradient-to-t from-black/[.85] to-black/[.35] md:overflow-hidden group'>
           
           <div className='opacity-0 group-hover:opacity-100 duration-500 ease-in-out flex flex-col justify-center items-center gap-6 md:mb-0 mb-6'>
             
@@ -56,7 +56,7 @@ function Projects() {
   return (
     <div className='flex flex-col w-full justify-center items-center my-10 md:py-16 pt-10 md:target:pt-[100px]' id="projects">
       <h2 className='text-5xl md:text-6xl mb-10 font-bold'>Projects</h2>
-      <div className='flex md:flex-row flex-col w-5/6 md:w-3/5 justify-between gap-6 h-420px'>
+      <div className='flex lg:flex-row flex-col w-5/6 xl:w-4/5 justify-between items-center gap-6 h-420px'>
         {projectMap}
       </div>
     </div>

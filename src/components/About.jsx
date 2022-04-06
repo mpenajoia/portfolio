@@ -44,7 +44,7 @@ function About() {
     
   return (
     <div className='w-full flex justify-center bg-zinc-900 md:py-16 pt-10 md:target:pt-[100px] ' id={'about'}>
-        <div className='flex flex-col w-full md:w-2/3 gap-5'>
+        <div className='flex flex-col w-full md:w-4/5 lg:w-2/3 gap-5'>
             <h2 className='text-5xl md:text-6xl font-bold text-center mb-10'>About Me</h2>
             <div className='flex flex-col md:flex-row gap-5'>
                 <div className=' md:w-2/5 self-center flex flex-col gap-8 md:gap-5 items-center'>
@@ -59,7 +59,7 @@ function About() {
                 </div>
                 <div className='w-full md:w-3/5'>
                     <p className='my-2 text-zinc-300 px-5 md:px-0'>{about.description}</p>
-                    <div className='flex flex-col flex-wrap md:flex-row w-full mt-7 md:h40 '>
+                    <div className='flex flex-col flex-wrap md:flex-row w-full mt-7 lg:h-40 '>
                         <ul className='flex justify-center md:justify-start flex-col mr-0 md:mr-6'>
                             {aboutNavMap}
                         </ul>
