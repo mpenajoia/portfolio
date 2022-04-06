@@ -27,7 +27,7 @@ function About() {
         })
         return (
             <li key={key} >
-                <div className=' group w-full flex flex-col justify-center' onClick={aboutNavClick}>                    
+                <div className=' group flex flex-col md:block justify-center' onClick={aboutNavClick}>                    
                     <button className={`flex flex-col items-center md:items-start text-xl md:text-lg font-bold duration-300 ease-in-out md:focus:text-yellow-500 md:hover:text-yellow-500 ${(aboutDetails === skill.title) ? 'md:text-yellow-500' : 'text-white'} bg-black md:bg-transparent py-5 md:py-0 ${(mobileDetails === skill.title) ? 'focus:bg-yellow-500 focus:text-zinc-800' : ''} md:focus:bg-transparent`} value={skill.title}>{skill.title}
                         
                         <div className={` hidden md:block border-t-2 duration-300 ease-in-out group-hover:w-full group-hover:border-yellow-500 ${(aboutDetails === skill.title) ? 'w-full border-yellow-500' : 'w-0'}`} value={skill.title}></div>
@@ -60,7 +60,7 @@ function About() {
                 <div className='w-full md:w-3/5'>
                     <p className='my-2 text-zinc-300 px-5 md:px-0'>{about.description}</p>
                     <div className='flex flex-col flex-wrap md:flex-row w-full mt-7 lg:h-40 '>
-                        <ul className='flex justify-center md:justify-start flex-col mr-0 md:mr-6'>
+                        <ul className='flex justify-center md:justify-start flex-col mr-0 md:mr-7'>
                             {aboutNavMap}
                         </ul>
                         <div className='hidden md:flex h-full'>                            
