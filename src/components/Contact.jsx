@@ -31,7 +31,7 @@ function Contact() {
                 <input required type="text" name="name" placeholder='Your Name *' className={inputClasses}/>
                 <input required type="email" name="email" placeholder='Your email *' className={inputClasses} />
                 <input required type="text" name="subject" placeholder='Subject *' className={inputClasses} />
-                <textarea required type="text" rows="5" name="message" placeholder='Message *' className={inputClasses} />
+                <textarea required type="text" rows="5" name="message" placeholder='Message *' className={`${inputClasses} resize-none`} />
                 <div className='self-center'>
                   <button className='rounded hover:bg-yellow-500 bg-zinc-800 text-zinc-500 hover:text-white font-bold text-xl py-2 px-3' type='submit'>Send</button>
                 </div>
