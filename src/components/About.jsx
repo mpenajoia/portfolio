@@ -28,8 +28,8 @@ function About() {
         return (
             <li key={key} >
                 <div className=' group flex flex-col md:block justify-center' onClick={aboutNavClick}>                    
-                    <button className={`flex flex-col items-center md:items-start text-xl md:text-lg font-bold duration-300 ease-in-out md:focus:text-yellow-500 md:hover:text-yellow-500 ${(aboutDetails === skill.title) ? 'md:text-yellow-500' : 'text-white'} bg-black md:bg-transparent py-5 md:py-0 ${(mobileDetails === skill.title) ? 'bg-yellow-500 text-zinc-800' : ''} md:focus:bg-transparent`} value={skill.title}>{skill.title}
-                        <div className={` hidden md:block border-t-2 duration-300 ease-in-out group-hover:w-full group-hover:border-yellow-500 ${(aboutDetails === skill.title) ? 'w-full border-yellow-500' : 'w-0'}`} value={skill.title}></div>
+                    <button className={`flex flex-col items-center md:items-start text-xl md:text-lg font-bold duration-300 ease-in-out md:focus:text-yellow-500 ${(aboutDetails === skill.title) ? 'md:text-yellow-500' : 'text-white'} bg-black md:bg-transparent py-5 md:py-0 ${(mobileDetails === skill.title) ? 'bg-yellow-500 text-zinc-800' : ''} md:focus:bg-transparent`} value={skill.title}>{skill.title}
+                        <div className={` hidden md:block border-t-2 duration-300 ease-in-out group-hover:w-full ${(aboutDetails === skill.title) ? 'w-full border-yellow-500' : 'w-0'}`} value={skill.title}></div>
                     </button>
                 </div>
                 {(mobileDetails === skill.title) ?
