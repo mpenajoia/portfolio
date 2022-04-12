@@ -24,3 +24,18 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
+.skew {
+  transform-origin: right center;
+  transform: perspective(130px) rotateY(-6deg) translateZ(0);
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, black 10%, rgba(0, 0, 0, 0.1) 50%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: 0% 50%;
+  -webkit-mask-size: 170% 200%;
+  will-change: -webkit-mask-position,-moz-mask-position,mask-position,transform;
+  overflow:hidden;
+  z-index: 0;
+}
+
+/* .text-glow {
+  text-shadow: 0 0 80px rgb(192 219 255 / 48%), 0 0 32px rgb(65 120 255 / 24%);
+} */
