@@ -195,8 +195,8 @@
         },
         {
             "title": "cryptoFOMO",
-            "link": "https://mpenajoia.github.io/CryptoDreamsApp/#/",
-            "github": "https://github.com/mpenajoia/CryptoDreamsApp",
+            "link": "https://penajoia.com/cryptoFOMO/",
+            "github": "https://github.com/mpenajoia/cryptofomo",
             "desc": "Using a cryptocurrency API for pricing, a user can calculate what an investment in any cryptocurrency COULD have been worth in today's dollars had they invested a certain time ago.",
             "tech": ["React", "API"],
             "image":"Cryptofomo"
