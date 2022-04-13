@@ -11,8 +11,8 @@ function Hero() {
       return proj.includes(item.image.toLowerCase())
     })
     return(
-      <div key={key} className='w-[300px] rounded-lg flex flex-col text-center'>
-        <img alt={item.title} src={heroThumb} />
+      <div key={key} className='w-[300px] flex flex-col text-center'>
+        <img alt={item.title} src={heroThumb} className="rounded-lg"/>
             <p className='bg-zinc-800 py-5 rounded-b-lg font-bold text-yellow-500'>{item.title}</p>
       </div>
     )
