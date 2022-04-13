@@ -9,7 +9,7 @@ function App() {
   return (
     <ObjectContext.Provider value={{ info }}>
       <Router>
-        <div className="flex w-full justify-center flex-col">
+        <div className="flex w-full justify-center flex-col no-scrollbar">
             <Home/>      
         </div>
       </Router>
