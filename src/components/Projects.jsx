@@ -48,7 +48,7 @@ function Projects() {
   return (
     <div className='flex flex-col w-full justify-center items-center my-10 md:py-16 pt-10 md:target:pt-[100px]' id="projects">
       <h2 className='text-5xl md:text-6xl mb-10 font-bold'>Projects</h2>
-      <div className='flex lg:flex-row flex-col w-5/6 xl:w-4/5 justify-between items-center gap-6 h-420px'>
+      <div className='flex lg:flex-row flex-col max-w-[800px] w-5/6 xl:w-4/5 justify-between items-center gap-6 h-420px'>
         {projectMap}
       </div>
     </div>
