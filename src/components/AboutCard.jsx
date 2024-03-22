@@ -17,7 +17,7 @@ function AboutCard(props) {
         )
     })
   return (
-    <div className='flex flex-col flex-wrap md:justify-start justify-center'>
+    <div className='flex flex-col md:justify-start justify-center'>
         {skillsMap}
     </div>
   )

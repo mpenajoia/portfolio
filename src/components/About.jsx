@@ -49,7 +49,7 @@ function About() {
                 <div className=' md:w-2/5 self-center flex flex-col gap-8 md:gap-5 items-center'>
                     <img src={Photo} alt="Me" />
                     <div className='flex justify-center items-center w-3/5 '>
-                        <a href="https://penajoia.com/resume" className=' flex gap-2 justify-center bg-zinc-700 hover:bg-yellow-500 duration-300 ease-in-out rounded py-3 px-4 font-bold' target="_blank" rel="noreferrer">
+                        <a href="https://docs.google.com/document/d/1MXnyv1YNhR9ctm9yEPJ2Q31_4M7Sh-T8Oxl96XVw6zk/edit?usp=sharing" className=' flex gap-2 justify-center bg-zinc-700 hover:bg-yellow-500 duration-300 ease-in-out rounded py-3 px-4 font-bold' target="_blank" rel="noreferrer">
                             <Icon icon={icons.fileText2} />
                             <span>Resume/CV</span>
                         </a>
@@ -58,7 +58,7 @@ function About() {
                 </div>
                 <div className='w-full md:w-3/5'>
                     <p className='my-2 text-zinc-300 text-xl px-5 md:px-0'>{about.description}</p>
-                    <div className='flex flex-col flex-wrap md:flex-row w-full mt-7 lg:h-40 '>
+                    <div className='flex flex-col flex-wrap md:flex-row w-full mt-7 lg:h-80 '>
                         <ul className='flex justify-center md:justify-start flex-col mr-0 md:mr-7'>
                             {aboutNavMap}
                         </ul>

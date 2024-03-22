@@ -25,11 +25,11 @@ function Hero() {
             <br className='md:hidden' />
             Marco Silva &
             <br/>
-            I'm a <span className='text-yellow-500'>Front End Developer</span>
-            <br/>
+            I'm a <span className='text-yellow-500'>Software Engineer</span>.
+            {/* <br/>
             based in&nbsp;
             <br className='md:hidden' />
-            Los Angeles.
+            Los Angeles. */}
         </h1>
         <div className='hidden absolute lg:flex lg:opacity-60 xl:opacity-100 gap-4 right-0 pointer-events-none skew'>
           {heroProjects}

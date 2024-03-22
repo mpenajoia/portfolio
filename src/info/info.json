@@ -17,33 +17,41 @@
         }
     ],
     "about": {
-        "description": "Front end developer who completed General Assembly’s Software Engineering Bootcamp where I built MERN stack applications. With a background in both the film and motorcycle industry I bring a creative design eye with hands-on technical experience to software engineering. ",
+        "description": "A results-oriented, adaptive, and multi-faceted Software Engineer with a record of success designing, building, and configuring applications to meet business processes and client requirements.",
         "skills": [
             {
                 "title": "Experience",
                 "details": [
                     {
-                        "name": "General Assembly",
-                        "subname": "Software Engineering Fellow",
-                        "year": "2021",
+                        "name": "JW Player",
+                        "subname": "Software Engineer",
+                        "year": "2022-Present",
                         "desc": "",
                         "location": "Remote",
-                        "link": "https://penajoia.com/resume"
-                    },
-                    {
-                        "name": "Moto Republic",
-                        "subname": "Technician",
-                        "year": "2019-2021",
-                        "desc": "",
-                        "location": "Eagle Rock, CA, USA",
                         "link": ""
                     },
                     {
-                        "name": "Freelance Filmmaker",
-                        "subname": "First AC",
-                        "year": "2013-2020",
+                        "name": "Tech Fleet Community DAO",
+                        "subname": "Software Engineer",
+                        "year": "2022",
                         "desc": "",
-                        "location": "New York, NY, USA",
+                        "location": "Remote",
+                        "link": ""
+                    },
+                    {
+                        "name": "Early Bird",
+                        "subname": "Front End Engineering Intern",
+                        "year": "2022",
+                        "desc": "",
+                        "location": "Remote",
+                        "link": ""
+                    },
+                    {
+                        "name": "Various Companies",
+                        "subname": "Motorcycle Technician",
+                        "year": "2015-2021",
+                        "desc": "",
+                        "location": "CA & NJ",
                         "link": ""
                     }
                 ]
@@ -69,7 +77,7 @@
                 ]
             },
             {
-                "title": "Languages",
+                "title": "Tech",
                 "details": [
                     {
                         "name": "React",
@@ -88,7 +96,7 @@
                         "link": ""
                     },
                     {
-                        "name": "HTML5",
+                        "name": "Typscript",
                         "subname": "",
                         "year": "",
                         "desc": "",
@@ -96,7 +104,7 @@
                         "link": ""
                     },
                     {
-                        "name": "CSS3",
+                        "name": "Tailwind",
                         "subname": "",
                         "year": "",
                         "desc": "",
@@ -112,7 +120,7 @@
                         "link": ""
                     },
                     {
-                        "name": "Express",
+                        "name": "Python",
                         "subname": "",
                         "year": "",
                         "desc": "",
@@ -120,7 +128,15 @@
                         "link": ""
                     },
                     {
-                        "name": "MongoDB",
+                        "name": "AWS",
+                        "subname": "",
+                        "year": "",
+                        "desc": "",
+                        "location": "",
+                        "link": ""
+                    },
+                    {
+                        "name": "PHP",
                         "subname": "",
                         "year": "",
                         "desc": "",
